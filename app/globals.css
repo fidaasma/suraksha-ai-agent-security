@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-paper text-ink antialiased; }
+:focus-visible { outline: 3px solid #E39A0B; outline-offset: 2px; }
+
+@layer components {
+  .btn { @apply inline-flex min-h-[48px] items-center justify-center rounded-md px-6 text-base font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60; }
+  .btn-primary { @apply bg-ink text-white hover:bg-[#1c3558]; }
+  .btn-secondary { @apply border border-ink bg-white text-ink hover:bg-paper; }
+  .field { @apply w-full rounded-md border border-line bg-white px-4 py-3 text-base text-ink placeholder:text-[#7A8799]; }
+}
